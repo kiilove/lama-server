@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const OrderShema = new mongoose.Schema(
+const OrderSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
@@ -9,7 +9,7 @@ const OrderShema = new mongoose.Schema(
     products: [
       {
         productId: {
-          type: string,
+          type: String,
         },
         quantity: {
           type: Number,
